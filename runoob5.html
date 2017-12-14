@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <title>标题</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+        function changeLight() {
+            var x = document.getElementById("light");
+            if (x.src.match("bulboff")) {
+                x.src = "pic_bulbon.gif";
+            } else {
+                x.src = "pic_bulboff.gif";
+            }
+            
+        }
+    </script>
+
+    <img src="pic_bulboff.gif" alt="灯泡" width="100px" height="180px" onclick="changeLight()" id="light">
+    </body>
+</html>
